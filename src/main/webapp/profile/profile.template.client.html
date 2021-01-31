@@ -1,56 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+
 <body>
 <div class="container">
-    <h1>Profile</h1>
 
-    <div class="alert alert-danger" role="alert">
-        Danger Will Robinson
+    <h1>
+        Profile
+    </h1>
+
+    <div class="alert alert-danger wbdv-message"
+         role="alert">
+        ERROR
     </div>
 
 
-    <div class="alert alert-success" role="alert">
-        Yay!!!
+    <div class="alert alert-success wbdv-message"
+         role="alert">
+        SUCCESS
     </div>
 
     <div class="mb-3 row">
-        <label
+        <label  for="wbdv-field wbdv-username"
                 class="col-sm-2 col-form-label">
             Username
         </label>
-        <div class="col-sm-10">
+        <div class="col-sm-10 wbdv-field wbdv-username">
             <input type="text"
-                   readonly
                    class="form-control"
-                   id="username"
-                   value="alice"/>
-        </div>
-    </div>
-    <div class="mb-3 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label">
-            Password
-        </label>
-        <div class="col-sm-10">
-            <input type="password"
-                   class="form-control"
-                   id="inputPassword">
+                   id="wbdv-field wbdv-username"
+                   placeholder="alice"/>
         </div>
     </div>
 
     <div class="mb-3 row">
-        <label for="phone"
+        <label for="wbdv-field wbdv-password"
+               class="col-sm-2 col-form-label">
+            Password
+        </label>
+        <div class="col-sm-10 wbdv-field wbdv-password">
+            <input type="password"
+                   class="form-control"
+                   id="wbdv-field wbdv-password">
+        </div>
+    </div>
+
+    <div class="mb-3 row">
+        <label for="wbdv-field wbdv-phone"
                class="col-sm-2 col-form-label">
             Phone
         </label>
-        <div class="col-sm-10">
+        <div class="col-sm-10 wbdv-field wbdv-phone">
             <input type="tel"
                    class="form-control"
-                   id="phone"/>
+                   id="wbdv-field wbdv-phone"/>
         </div>
     </div>
 
@@ -59,22 +67,23 @@
                class="col-sm-2 col-form-label">
             Email
         </label>
-        <div class="col-sm-10">
+        <div class="col-sm-10 wbdv-field wbdv-email">
             <input type="email"
                    class="form-control"
                    title="Please enter a valid email"
                    placeholder="alice@wonderland"
-                   id="email"/>
+                   id="wbdv-field wbdv-email"/>
         </div>
     </div>
 
     <div class="mb-3 row">
-        <label for="role"
+        <label for="wbdv-field wbdv-role"
                class="col-sm-2 col-form-label">
             Role
         </label>
-        <div class="col-sm-10">
-            <select id="role" class="form-control">
+        <div class="col-sm-10 wbdv-field wbdv-role">
+            <select id="wbdv-field wbdv-role"
+                    class="form-control">
                 <option>Faculty</option>
                 <option>Student</option>
                 <option>Staff</option>
@@ -83,32 +92,40 @@
     </div>
 
     <div class="mb-3 row">
-        <label for="dob"
+        <label for="wbdv-field wbdv-dob"
                class="col-sm-2 col-form-label">
             DOB
         </label>
-        <div class="col-sm-10">
+        <div class="col-sm-10 wbdv-field wbdv-dob">
             <input type="date"
                    class="form-control"
                    title="Please enter your DOB"
                    value="2021-01-25"
-                   id="dob"/>
+                   id="wbdv-field wbdv-dob"/>
         </div>
     </div>
 
     <div class="mb-3 row">
-        <label for="dob"
-               class="col-sm-2 col-form-label">
+        <label class="col-sm-2 col-form-label">
+        </label>
+        <div class="col-sm-10 wbdv-button wbdv-update">
+            <a class="btn btn-success btn-block wbdv-button wbdv-update"
+               href="#">
+                Update
+            </a>
+        </div>
+    </div>
 
+    <div class="mb-3 row">
+        <label class="col-sm-2 col-form-label">
         </label>
         <div class="col-sm-10">
-            <a class="btn btn-danger btn-block"
+            <a class="btn btn-danger btn-block wbdv-button wbdv-logout"
                href="../index.html">
                 Logout
             </a>
         </div>
     </div>
-
 </div>
 </body>
 </html>
