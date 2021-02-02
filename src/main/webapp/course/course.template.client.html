@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>Course List</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           rel="stylesheet"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           rel="stylesheet"/>
     <link href="./course.style.client.css"
           rel="stylesheet"/>
-    <meta charset="UTF-8">
-    <title>Course List</title>
 </head>
 
 <body>
 <div class="wbdv-sticky-top wbdv-padding-5px">
     <div class="row">
-        <div class="col-1 wbdv-field wbdv-hamburger">
+        <div class="col-md-1 visible-xs-1 wbdv-field wbdv-hamburger">
             <i class="fa fa-bars fa-2x"></i>
         </div>
 
-        <div class="col-2 wbdv-label wbdv-course-manager">
+        <div class="col-md-2 hidden-xs wbdv-label wbdv-course-manager">
             <h4>Course Manager</h4>
         </div>
 
-        <div class="col-8 wbdv-field wbdv-new-course">
-            <input class="form-control"/>
+        <div class="col-md-8 visible-xs-10 wbdv-field wbdv-new-course">
+            <input class="form-control"
+                   placeholder="New Course Title"/>
         </div>
 
-        <div class="col-1 wbdv-button wbdv-add-course">
+        <div class="col-md-1 visible-xs-1 wbdv-button wbdv-add-course">
             <i class="fa fa-plus fa-2x"></i>
         </div>
     </div>
@@ -34,153 +35,154 @@
 
 <br/>
 <br/>
+<br/>
 
 <div class="container">
-    <div class="row">
-        <div class="col-5 wbdv-header wbdv-title">
+    <div class="row hidden-xs">
+        <div class="col-md-5 wbdv-header wbdv-title">
             Title
         </div>
 
-        <div class="col-2 wbdv-header wbdv-owner">
+        <div class="col-md-2 wbdv-header wbdv-owner">
             Owned by
             <i class="fa fa-sort-up wbdv-header wbdv-sort"></i>
         </div>
 
-        <div class="col-3 wbdv-header wbdv-last-modified">
+        <div class="col-md-3 wbdv-header wbdv-last-modified">
             Last modified
         </div>
 
-        <div class="col-1 wbdv-button wbdv-grid-layout">
+        <div class="col-md-1 wbdv-button wbdv-grid-layout">
             <i class="fa fa-th"></i>
         </div>
 
-        <div class="col-1 wbdv-button wbdv-list-layout">
+        <div class="col-md-1 wbdv-button wbdv-list-layout">
             <i class="fa fa-sort"></i>
         </div>
     </div>
 
     <div class="row wbdv-row wbdv-course">
-        <div class="col-5">
+        <div class="col-md-5 visible-xs-10 wbdv-row wbdv-title">
             <a href="../editor/editor.template.client.html">
                 <i class="fa fa-file wbdv-row wbdv-icon"></i>
                 CS4550
             </a>
         </div>
 
-        <div class="col-3 wbdv-row wbdv-owner">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-owner">
             me
         </div>
 
-        <div class="col-3 wbdv-row wbdv-modified-date">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-modified-date">
             1/1/2021
         </div>
 
-        <div class="col-1 wbdv-row wbdv-button wbdv-delete">
+        <div class="col-md-1 visible-xs-2 wbdv-row wbdv-button wbdv-delete">
             <i class="fa fa-trash"></i>
         </div>
     </div>
 
     <div class="row wbdv-row wbdv-course">
-        <div class="col-5 wbdv-row wbdv-title">
+        <div class="col-md-5 visible-xs-10 wbdv-row wbdv-title">
             <a href="../editor/editor.template.client.html">
                 <i class="fa fa-file wbdv-row wbdv-icon"></i>
                 CS3200
             </a>
         </div>
 
-        <div class="col-3 wbdv-row wbdv-owner">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-owner">
             me
         </div>
 
-        <div class="col-3 wbdv-row wbdv-modified-date">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-modified-date">
             1/1/2021
         </div>
 
-        <div class="col-1 wbdv-row wbdv-button wbdv-delete">
+        <div class="col-md-1 visible-xs-2 wbdv-row wbdv-button wbdv-delete">
             <i class="fa fa-trash"></i>
         </div>
     </div>
 
     <div class="row wbdv-row wbdv-course">
-        <div class="col-5 wbdv-row wbdv-title">
+        <div class="col-md-5 visible-xs-10 wbdv-row wbdv-title">
             <a href="../editor/editor.template.client.html">
                 <i class="fa fa-file wbdv-row wbdv-icon"></i>
                 CS5610
             </a>
         </div>
 
-        <div class="col-3 wbdv-row wbdv-owner">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-owner">
             me
         </div>
 
-        <div class="col-3 wbdv-row wbdv-modified-date">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-modified-date">
             1/1/2021
         </div>
 
-        <div class="col-1 wbdv-row wbdv-button wbdv-delete">
+        <div class="col-md-1 visible-xs-2 wbdv-row wbdv-button wbdv-delete">
             <i class="fa fa-trash"></i>
         </div>
     </div>
 
     <div class="row wbdv-row wbdv-course">
-        <div class="col-5 wbdv-row wbdv-title">
+        <div class="col-md-5 visible-xs-10 wbdv-row wbdv-title">
             <a href="../editor/editor.template.client.html">
                 <i class="fa fa-file wbdv-row wbdv-icon"></i>
                 CS1234
             </a>
         </div>
 
-        <div class="col-3 wbdv-row wbdv-owner">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-owner">
             me
         </div>
 
-        <div class="col-3 wbdv-row wbdv-modified-date">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-modified-date">
             1/1/2021
         </div>
 
-        <div class="col-1 wbdv-row wbdv-button wbdv-delete">
+        <div class="col-md-1 visible-xs-2 wbdv-row wbdv-button wbdv-delete">
             <i class="fa fa-trash"></i>
         </div>
     </div>
 
     <div class="row wbdv-row wbdv-course">
-        <div class="col-5 wbdv-row wbdv-title">
+        <div class="col-md-5 visible-xs-10 wbdv-row wbdv-title">
             <a href="../editor/editor.template.client.html">
                 <i class="fa fa-file wbdv-row wbdv-icon"></i>
                 CS2345
             </a>
         </div>
 
-        <div class="col-3 wbdv-row wbdv-owner">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-owner">
             me
         </div>
 
-        <div class="col-3 wbdv-row wbdv-modified-date">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-modified-date">
             1/1/2021
         </div>
 
-        <div class="col-1 wbdv-row wbdv-button wbdv-delete">
+        <div class="col-md-1 visible-xs-2 wbdv-row wbdv-button wbdv-delete">
             <i class="fa fa-trash"></i>
         </div>
     </div>
 
     <div class="row wbdv-row wbdv-course">
-        <div class="col-5 wbdv-row wbdv-title">
+        <div class="col-md-5 visible-xs-10 wbdv-row wbdv-title">
             <a href="../editor/editor.template.client.html">
                 <i class="fa fa-file wbdv-row wbdv-icon"></i>
                 CS3456
             </a>
         </div>
 
-        <div class="col-3 wbdv-row wbdv-owner">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-owner">
             me
         </div>
 
-        <div class="col-3 wbdv-row wbdv-modified-date">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-modified-date">
             1/1/2021
         </div>
 
-        <div class="col-1 wbdv-row wbdv-button wbdv-delete">
+        <div class="col-md-1 visible-xs-2 wbdv-row wbdv-button wbdv-delete">
             <i class="fa fa-trash"></i>
         </div>
     </div>
@@ -190,106 +192,106 @@
     <h4>Yesterday</h4>
 
     <div class="row wbdv-row wbdv-course">
-        <div class="col-5 wbdv-row wbdv-title">
+        <div class="col-md-5 visible-xs-10 wbdv-row wbdv-title">
             <a href="../editor/editor.template.client.html">
                 <i class="fa fa-file wbdv-row wbdv-icon"></i>
                 CS3456
             </a>
         </div>
 
-        <div class="col-3 wbdv-row wbdv-owner">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-owner">
             me
         </div>
 
-        <div class="col-3 wbdv-row wbdv-modified-date">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-modified-date">
             1/1/2021
         </div>
 
-        <div class="col-1 wbdv-row wbdv-button wbdv-delete">
+        <div class="col-md-1 visible-xs-2 wbdv-row wbdv-button wbdv-delete">
             <i class="fa fa-trash"></i>
         </div>
     </div>
 
     <div class="row wbdv-row wbdv-course">
-        <div class="col-5 wbdv-row wbdv-title">
+        <div class="col-md-5 visible-xs-10 wbdv-row wbdv-title">
             <a href="../editor/editor.template.client.html">
                 <i class="fa fa-file wbdv-row wbdv-icon"></i>
                 CS3456
             </a>
         </div>
 
-        <div class="col-3 wbdv-row wbdv-owner">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-owner">
             me
         </div>
 
-        <div class="col-3 wbdv-row wbdv-modified-date">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-modified-date">
             1/1/2021
         </div>
 
-        <div class="col-1 wbdv-row wbdv-button wbdv-delete">
+        <div class="col-md-1 visible-xs-2 wbdv-row wbdv-button wbdv-delete">
             <i class="fa fa-trash"></i>
         </div>
     </div>
 
     <div class="row wbdv-row wbdv-course">
-        <div class="col-5 wbdv-row wbdv-title">
+        <div class="col-md-5 visible-xs-10 wbdv-row wbdv-title">
             <a href="../editor/editor.template.client.html">
                 <i class="fa fa-file wbdv-row wbdv-icon"></i>
                 CS3456
             </a>
         </div>
 
-        <div class="col-3 wbdv-row wbdv-owner">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-owner">
             me
         </div>
 
-        <div class="col-3 wbdv-row wbdv-modified-date">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-modified-date">
             1/1/2021
         </div>
 
-        <div class="col-1 wbdv-row wbdv-button wbdv-delete">
+        <div class="col-md-1 visible-xs-2 wbdv-row wbdv-button wbdv-delete">
             <i class="fa fa-trash"></i>
         </div>
     </div>
 
     <div class="row wbdv-row wbdv-course">
-        <div class="col-5 wbdv-row wbdv-title">
+        <div class="col-md-5 visible-xs-10 wbdv-row wbdv-title">
             <a href="../editor/editor.template.client.html">
                 <i class="fa fa-file wbdv-row wbdv-icon"></i>
                 CS3456
             </a>
         </div>
 
-        <div class="col-3 wbdv-row wbdv-owner">
+        <div class="col-md-3 hidden-xswbdv-row wbdv-owner">
             me
         </div>
 
-        <div class="col-3 wbdv-row wbdv-modified-date">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-modified-date">
             1/1/2021
         </div>
 
-        <div class="col-1 wbdv-row wbdv-button wbdv-delete">
+        <div class="col-md-1 visible-xs-2 wbdv-row wbdv-button wbdv-delete">
             <i class="fa fa-trash"></i>
         </div>
     </div>
 
     <div class="row wbdv-row wbdv-course">
-        <div class="col-5 wbdv-row wbdv-title">
+        <div class="col-md-5 visible-xs-10 wbdv-row wbdv-title">
             <a href="../editor/editor.template.client.html">
                 <i class="fa fa-file wbdv-row wbdv-icon"></i>
                 CS3456
             </a>
         </div>
 
-        <div class="col-3 wbdv-row wbdv-owner">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-owner">
             me
         </div>
 
-        <div class="col-3 wbdv-row wbdv-modified-date">
+        <div class="col-md-3 hidden-xs wbdv-row wbdv-modified-date">
             1/1/2021
         </div>
 
-        <div class="col-1 wbdv-row wbdv-button wbdv-delete">
+        <div class="col-md-1 visible-xs-2 wbdv-row wbdv-button wbdv-delete">
             <i class="fa fa-trash"></i>
         </div>
     </div>
