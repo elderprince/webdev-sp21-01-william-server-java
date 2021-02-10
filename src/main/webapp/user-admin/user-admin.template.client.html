@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User Admin</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="user-admin.style.client.css"
+          rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../services/user.service.client.js"></script>
+    <script src="user-admin.controller.client.js"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+    <h1 id="wbdv-user-admin-title">User Admin</h1>
+
+    <table class="table">
+        <thead>
+        <tr class="wbdv-user-admin-heading">
+            <th>Username</th>
+            <th>Password</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Role</th>
+            <th></th>
+        </tr>
+
+        <tr class="wbdv-user-admin-form">
+            <td>
+                <input class="form-control wbdv-user-admin-username-fld"/>
+            </td>
+            <td>
+                <input class="form-control wbdv-user-admin-password-fld"/>
+            </td>
+            <td>
+                <input class="form-control wbdv-user-admin-first-name-fld"/>
+            </td>
+            <td>
+                <input class="form-control wbdv-user-admin-last-name-fld"/>
+            </td>
+            <td>
+                <select class="form-control wbdv-user-admin-role-fld">
+                    <option value="FACULTY">Faculty</option>
+                    <option value="STUDENT">Student</option>
+                    <option value="ADMIN">Admin</option>
+                </select>
+            </td>
+
+            <td>
+                <span class="pull-right" style="white-space: nowrap">
+                    <i class="fa fa-search fa-2x wbdv-user-search-btn"></i>
+                    <i class="fa fa-plus fa-2x wbdv-user-create-btn"></i>
+                    <i class="fa fa-check fa-2x wbdv-user-update-btn"></i>
+                </span>
+            </td>
+        </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
