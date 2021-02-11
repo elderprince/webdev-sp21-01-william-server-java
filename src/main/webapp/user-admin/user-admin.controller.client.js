@@ -18,6 +18,7 @@ function createUser(user) {
 }
 
 var selectedUser = null
+
 function selectUser(event) {
     var selectBtn = jQuery(event.target)
     var theId = selectBtn.attr("id")
@@ -91,8 +92,6 @@ function init() {
     $lastNameFld = $(".wbdv-user-admin-lastname-fld")
     $roleFld = $(".wbdv-user-admin-role-fld")
     $createBtn = $(".wbdv-user-create-btn")
-    // addCourseBtn = jQuery("#wbdv-create-course")
-    // addCourseBtn.click(addCourse)
     $updateBtn = $(".wbdv-user-update-btn")
     theTableBody = jQuery("tbody")
 
@@ -105,10 +104,10 @@ function init() {
                 lastName: $lastNameFld.val(),
                 role: $roleFld.val()
             })
-            $userFld.val()
-            $passwordFld.val()
-            $firstNameFld.val()
-            $lastNameFld.val()
+            user: $userFld.val("")
+            password: $passwordFld.val("")
+            firstName: $firstNameFld.val("")
+            lastName: $lastNameFld.val("")
         }
     )
 
@@ -118,4 +117,5 @@ function init() {
             renderUsers(users)
         })
 }
+
 jQuery(init)
