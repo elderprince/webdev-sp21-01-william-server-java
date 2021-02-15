@@ -76,6 +76,10 @@ function updateUser() {
             users[index] = selectedUser
             renderUsers(users)
         })
+    $userFld.val("")
+    $passwordFld.val("")
+    $firstNameFld.val("")
+    $lastNameFld.val("")
 }
 
 function init() {
