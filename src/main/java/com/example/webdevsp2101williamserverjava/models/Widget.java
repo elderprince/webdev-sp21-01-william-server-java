@@ -1,21 +1,11 @@
 package com.example.webdevsp2101williamserverjava.models;
 
 public class Widget {
-    private Integer id;
+    private Long id;
     private String type;
     private Integer size;
     private String text;
-    private String name;
-    private String value;
     private String topicId;
-
-    public Widget(String topicId, Integer id, String type, Integer size, String text) {
-        this.topicId = topicId;
-        this.id = id;
-        this.type = type;
-        this.size = size;
-        this.text = text;
-    }
 
     public String getTopicId() {
         return topicId;
@@ -25,11 +15,11 @@ public class Widget {
         this.topicId = topicId;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -57,19 +47,11 @@ public class Widget {
         this.text = text;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
+    public Widget(Long id, String topicId, String type, Integer size, String text) {
+        this.id = id;
+        this.topicId = topicId;
+        this.type = type;
+        this.size = size;
+        this.text = text;
     }
 }

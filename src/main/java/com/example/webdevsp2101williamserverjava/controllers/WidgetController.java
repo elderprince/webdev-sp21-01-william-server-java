@@ -13,7 +13,7 @@ public class WidgetController {
     @Autowired
     WidgetService service;
 
-    @PostMapping("/api/topics/{tid}widgets")
+    @PostMapping("/api/topics/{tid}/widgets")
     public Widget createWidgetForTopic(
             @PathVariable("tid") String topicId,
             @RequestBody Widget widget) {
@@ -28,20 +28,26 @@ public class WidgetController {
         return service.findWidgetsForTopic(topicId);
     }
 
-    @PutMapping("/api/widgets/{wid}")
-    public Integer updateWidget(
-            @PathVariable("wid") Integer id,
-            @RequestBody Widget widget) {
-        return service.updateWidget(id, widget);
-    }
-
-    @DeleteMapping("/api/widgets/{wid}")
-    public Integer deleteWidget(@PathVariable("wid") Integer id) {
-        return service.deleteWidget(id);
-    }
-
     @GetMapping("/api/widgets")
     public List<Widget> findAllWidgets() {
         return service.findAllWidgets();
+    }
+
+    @GetMapping("/api/widgets/{wid}")
+    public Widget findWidgetById(
+            @PathVariable("wid") Long id) {
+        return service.findWidgetById(id);
+    }
+
+    @DeleteMapping("/api/widgets/{wid}")
+    public Integer deleteWidget(@PathVariable("wid") Long id) {
+        return service.deleteWidget(id);
+    }
+
+    @PutMapping("/api/widgets/{wid}")
+    public Integer updateWidget(
+            @PathVariable("wid") Long id,
+            @RequestBody Widget widget) {
+        return service.updateWidget(id, widget);
     }
 }
